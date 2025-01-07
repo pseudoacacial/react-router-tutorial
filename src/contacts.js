@@ -21,7 +21,7 @@ export async function createContact() {
   await set(contacts)
   return contact
 }
-
+// branch change
 export async function getContact(id) {
   await fakeNetwork(`contact:${id}`)
   let contacts = await localforage.getItem("contacts")
